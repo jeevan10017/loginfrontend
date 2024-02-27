@@ -1,4 +1,3 @@
-// src/components/SignupForm.js
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -19,7 +18,7 @@ const SignupForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3001/signup', formData);
+      const response = await axios.post('http://localhost:3000/signup', formData);
       console.log(response.data); // Handle success or redirect to login
     } catch (error) {
       console.error('Signup failed', error);
