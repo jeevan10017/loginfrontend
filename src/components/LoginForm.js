@@ -19,7 +19,7 @@ const LoginForm = () => {
     e.preventDefault();
     try {
       const response = await axios.post('http://localhost:3001/login', formData);
-      console.log(response.data); // Handle success or redirect to dashboard
+      console.log(response.data);
     } catch (error) {
       console.error('Login failed', error);
     }
