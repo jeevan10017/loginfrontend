@@ -1,4 +1,3 @@
-// src/components/LoginForm.js
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -18,7 +17,7 @@ const LoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3001/login', formData);
+      const response = await axios.post('http://localhost:3000/login', formData);
       console.log(response.data);
     } catch (error) {
       console.error('Login failed', error);
